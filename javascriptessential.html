@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate JavaScript Playground - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h2>🧪 JavaScript Playground - To-Do List</h2>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="todo">To-Do</div>
+      <div class="tab" data-tab="gallery">Gallery</div>
+    </div>
+
+    <div id="todo" class="tab-content active">
+      <form id="todoForm">
+        <div class="form-group">
+          <label for="task">New Task:</label>
+          <input type="text" id="task" placeholder="Enter a task" />
+          <div class="error" id="taskError"></div>
+        </div>
+        <button type="submit" id="submitBtn">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div id="gallery" class="tab-content">
+      <img id="slide" src="https://placekitten.com/400/200" width="100%" />
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+
+</body>
+</html>
